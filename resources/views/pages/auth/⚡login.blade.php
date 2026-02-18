@@ -34,23 +34,23 @@ new #[Layout('layouts::auth')] #[Title('Login - Rawabi ZamZam')] class extends C
         }
         
         if ($user->hasRole('owner') || $user->hasRole('bod')) {
-            return redirect()->intended(route('dashboard.executive'));
+            return redirect()->route('dashboard.executive');
         }
 
         if ($user->hasRole('finance')) {
-            return redirect()->intended(route('finance.pos'));
+            return redirect()->route('finance.pos');
         }
 
         if ($user->hasRole('marketing')) {
-            return redirect()->intended(route('marketing.salesApp'));
+            return redirect()->route('marketing.salesApp');
         }
 
         if ($user->hasRole('operasional') || $user->hasRole('staff_ops')) {
-            return redirect()->intended(route('operations.dashboard'));
+            return redirect()->route('operations.dashboard');
         }
 
         if ($user->hasRole('media') || $user->hasRole('editor')) {
-            return redirect()->intended(route('media.studio'));
+            return redirect()->route('media.studio');
         }
 
         return redirect()->intended('/');
