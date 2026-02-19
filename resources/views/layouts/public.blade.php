@@ -20,7 +20,7 @@
     <meta name="robots" content="noindex, nofollow"> <link rel="canonical" href="{{ url()->current() }}">
 
     <link rel="icon" type="image/png" href="{{ asset('images/brand/logo.png') }}">
-    <link rel="manifest" href="{{ asset('manifest.json') }}"> <meta name="theme-color" content="#000000"> <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="{{ asset('manifest.json') }}"> <meta name="theme-color" content="#dd7d00"> <meta name="mobile-web-app-capable" content="yes">
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
